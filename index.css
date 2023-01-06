@@ -27,7 +27,9 @@ body{
 #section_01 h1{
     font-weight: 600;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 24px;
+    margin-inline: 6rem;
+    margin-block: 0.5rem;
 }
 
 #profile{
@@ -107,4 +109,16 @@ footer img{
 
 #Card_06{
     display: none;
+}
+
+@media (max-width: 768px) {
+
+    #section_01 h1{
+        margin-inline: 4rem;
+        margin-block: 1rem;
+    }
+    #git_stats img{
+        height: 150px;
+    }
+
 }
