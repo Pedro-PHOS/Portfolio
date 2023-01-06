@@ -8,14 +8,37 @@
     src: url(/Fonts/Lato-Black.ttf);
 }
 
-body{
-
+#main{
     background-color: #00141e;
-    color: #005078;
+    color: rgb(0, 150, 180);
     font-size: 16px;
     font-weight: 400;
     font-family: Lato;
+    transition: 3s;
 }
+
+#header{
+    display: flex;
+    justify-content: end;
+}
+
+#dark_btn{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    margin: 1rem;
+}
+
+#dark_section{
+    height: 100%;
+    background-image: url(/imgs/darkmod_icon_01.png);
+    background-size:90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 #section_01{
     display: flex;
@@ -72,6 +95,7 @@ body{
     height: 400px;
     margin: 1rem;
     box-shadow: 1px 5px 5px 8px rgb(0, 8, 10);
+    transition: 3s;
 }
 
 .cards img{
@@ -84,14 +108,15 @@ body{
     font-weight:600;
     margin-block: 1rem;
     text-align: center;
-    color: rgb(0, 100, 160);
     font-family: lato-black;
+    transition: 1s;
 }
 
 .cards p{
-    margin-inline: 0.5rem;
-    color: #0064a0;
+    margin-inline: 1rem;
+    transition: 1s;
 }
+
 
 footer{
     box-shadow: 1px 5px 5px 10px rgb(0, 8, 10);
@@ -107,9 +132,120 @@ footer img{
     width: 40px;
 }
 
-#Card_06{
-    display: none;
+/*Ligth Mode*/
+
+#main.switch{
+    background-color: antiquewhite;
+    color: #494949;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Lato;
+    transition: 3s;
 }
+#main.switch #dark_section{
+    background-image: url(/imgs/darkmod_icon_02.png);
+    transition: 3s;
+}
+
+#main.switch .cards{
+    background-color: rgb(255, 225, 200);
+    color: #494949;
+    box-shadow: 5px 5px 8px rgb(0, 8, 10);
+    transition: 3s;
+}
+
+#main.switch footer{
+    background-color: rgb(255, 225, 200);
+    box-shadow: 5px 5px 15px rgb(0, 8, 10);
+    transition: 3s;
+}
+
+/*Cards Hover*/
+
+#portifolios.card_01 #card_01{
+    width: 500px;
+    height: 600px;
+    transition: 3s;
+}
+
+#portifolios.card_01 #card_01 h1{
+    font-size: 34px;
+    transition: 3s;
+}
+
+#portifolios.card_01 #card_01 p{
+    font-size: 26px;
+    transition: 3s;
+}
+
+
+#portifolios.card_02 #card_02{
+    width: 500px;
+    height: 600px;
+    transition: 3s;
+}
+
+#portifolios.card_02 #card_02 h1{
+    font-size: 34px;
+    transition: 3s;
+}
+
+#portifolios.card_02 #card_02 p{
+    font-size: 26px;
+    transition: 3s;
+}
+
+
+#portifolios.card_03 #card_03{
+    width: 500px;
+    height: 600px;
+    transition: 3s;
+}
+
+#portifolios.card_03 #card_03 h1{
+    font-size: 34px;
+    transition: 3s;
+}
+
+#portifolios.card_03 #card_03 p{
+    font-size: 26px;
+    transition: 3s;
+}
+
+
+#portifolios.card_04 #card_04{
+    width: 500px;
+    height: 600px;
+    transition: 3s;
+}
+
+#portifolios.card_04 #card_04 h1{
+    font-size: 34px;
+    transition: 3s;
+}
+
+#portifolios.card_04 #card_04 p{
+    font-size: 26px;
+    transition: 3s;
+}
+
+
+#portifolios.card_05 #card_05{
+    width: 500px;
+    height: 600px;
+    transition: 3s;
+}
+
+#portifolios.card_05 #card_05 h1{
+    font-size: 34px;
+    transition: 3s;
+}
+
+#portifolios.card_05 #card_05 p{
+    font-size: 26px;
+    transition: 3s;
+}
+
 
 @media (max-width: 768px) {
 
