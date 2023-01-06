@@ -3,10 +3,15 @@
     src: url(/Fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family:"Lato-black";
+    src: url(/Fonts/Lato-Black.ttf);
+}
+
 body{
 
-    background-color: rgb(0, 20, 30);
-    color: rgb(0, 80, 120);
+    background-color: #00141e;
+    color: #005078;
     font-size: 16px;
     font-weight: 400;
     font-family: Lato;
@@ -16,14 +21,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block: 2rem;
 }
 
 #section_01 h1{
     font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
 }
 
 #profile{
-    margin-block: 2rem;
+    margin: 2rem;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -37,15 +45,15 @@ body{
 #git_stats{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-block: 1rem;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #git_stats img{
     height: 200px;
     margin-inline: 0.5rem;
     box-shadow: 5px 5px 8px rgb(0, 8, 10);
+    margin-bottom: 1rem;
 }
 
 #portifolios{
@@ -75,11 +83,12 @@ body{
     margin-block: 1rem;
     text-align: center;
     color: rgb(0, 100, 160);
+    font-family: lato-black;
 }
 
 .cards p{
     margin-inline: 0.5rem;
-    color: rgb(0, 100, 160);
+    color: #0064a0;
 }
 
 footer{
@@ -93,4 +102,9 @@ footer{
 
 footer img{
     margin-inline: 1rem;
+    width: 40px;
+}
+
+#Card_06{
+    display: none;
 }
