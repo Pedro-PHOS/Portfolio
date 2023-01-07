@@ -1,4 +1,4 @@
-const switch_btn = document.getElementById("dark_btn");
+const switch_btn = document.getElementById("switch_btn");
 
 function toggle(){
     const switch_color = document.getElementById("main");
