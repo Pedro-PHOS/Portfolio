@@ -42,7 +42,6 @@ main, div, footer{
 }
 
 
-
 #section_01{
     display: flex;
     flex-direction: column;
@@ -56,6 +55,15 @@ main, div, footer{
     margin-block: 0.5rem;
     margin-inline: 2rem;
     text-align: center;
+}
+
+#section_01 p{
+    font-size: 18px;
+    line-height: 20px;
+    margin-block: 0.5rem;
+    margin-inline: 4rem;
+    text-align: center;
+    color: #c2d0d8;
 }
 
 #profile{
@@ -162,7 +170,6 @@ main, div, footer{
 }
 
 
-
 footer{
     box-shadow: 1px 5px 5px 10px rgb(0, 0, 0);
     background-color: rgb(22, 29, 39);
@@ -191,6 +198,7 @@ footer{
 }
 
 
+
 /*Ligth Mode*/
 
 #main.switch{
@@ -205,11 +213,13 @@ footer{
     background-image: url(/imgs/whitemode_icon.png);
 }
 
+#main.switch #section_01 p{
+    color: #545454;
+}
 
 #main.switch #git_stats_01{
     background-image: url("https://github-readme-stats.vercel.app/api?username=Pedro-PHOS&show_icons=true&theme=buefy&include_all_commits=true&count_private=true");
 }
-
 
 #main.switch #git_stats_02{
     background-image: url("https://github-readme-stats.vercel.app/api/top-langs/?username=Pedro-PHOS&layout=compact&langs_count=7&theme=buefy");
@@ -236,6 +246,8 @@ footer{
 #main.switch #github{
     background-image: url(/imgs/github_iconwhite.png);
 }
+
+
 
 /*Cards Hover*/
 
