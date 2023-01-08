@@ -46,4 +46,3 @@ function toggle_05(){
 }
 
 card_05.addEventListener("click",toggle_05);
-

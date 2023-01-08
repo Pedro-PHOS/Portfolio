@@ -8,7 +8,7 @@
     src: url(/Fonts/Lato-Black.ttf);
 }
 
-main, div, footer, p{
+main, div, footer, p, h1{
     transition: 1s;
 }
 
@@ -142,10 +142,11 @@ main, div, footer, p{
 }
 
 .cards{
-    background-color: rgb(22, 29, 39);
-    width: 300px;
-    height: 400px;
+    width: calc(300px + 1%);
+    height: calc(400px + 1%);
     margin: 1rem;
+    padding-bottom: 4rem;
+    background-color: rgb(22, 29, 39);
     box-shadow: 5px 5px 8px rgb(0, 0, 0);
     
 }
@@ -158,9 +159,9 @@ main, div, footer, p{
 .cards h1{
     font-size: 24px;
     font-weight:600;
-    margin-top: 1rem;
     text-align: center;
     font-family: lato-black;
+    margin: 1rem;
 }
 
 .cards p{
@@ -251,73 +252,81 @@ footer{
 /*Cards Hover*/
 
 #portifolios.card_01 #card_01{
-    width: 500px;
-    height: 600px;
+    width: calc(300px + 10%);
+    height: calc(400px + 10%);
 }
 
 #portifolios.card_01 #card_01 h1{
-    font-size: 32px;
+    font-size: calc(24px + 90%);
 }
 
 #portifolios.card_01 #card_01 p{
-    font-size: 26px;
+    font-size: calc(16px + 80%);
     margin-block: 2rem;
 }
 
 
+
 #portifolios.card_02 #card_02{
-    width: 500px;
-    height: 600px;
+    width: calc(300px + 10%);
+    height: calc(400px + 10%);
 }
 
 #portifolios.card_02 #card_02 h1{
-    font-size: 34px;
+    font-size: calc(24px + 80%);
 }
 
 #portifolios.card_02 #card_02 p{
-    font-size: 26px;
+    font-size: calc(16px + 80%);
+    margin-block: 2rem;
 }
+
 
 
 #portifolios.card_03 #card_03{
-    width: 500px;
-    height: 600px;
+    width: calc(300px + 10%);
+    height: calc(400px + 10%);
 }
 
 #portifolios.card_03 #card_03 h1{
-    font-size: 34px;
+    font-size: calc(24px + 80%);
 }
 
 #portifolios.card_03 #card_03 p{
-    font-size: 26px;
+    font-size: calc(16px + 80%);
+    margin-block: 2rem;
 }
+
 
 
 #portifolios.card_04 #card_04{
-    width: 500px;
-    height: 600px;
+    width: calc(300px + 10%);
+    height: calc(400px + 10%);
 }
 
 #portifolios.card_04 #card_04 h1{
-    font-size: 34px;
+    font-size: calc(24px + 80%);
 }
 
 #portifolios.card_04 #card_04 p{
-    font-size: 26px;
+    font-size: calc(16px + 80%);
+    margin-block: 2rem;
 }
+
 
 
 #portifolios.card_05 #card_05{
-    width: 500px;
-    height: 600px;
+    width: calc(300px + 10%);
+    height: calc(400px + 10%);
 }
 
 #portifolios.card_05 #card_05 h1{
-    font-size: 34px;
+    font-size: calc(24px + 80%);
 }
 
 #portifolios.card_05 #card_05 p{
-    font-size: 26px;
+    font-size: calc(16px + 80%);
+    margin-block: 2rem;
 }
 
 
