@@ -1,3 +1,92 @@
+Enquanto o Github stats não volta, deixo anotado o codigo em html e css:
+
+HTML(
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/imgs/Cyber_pic_ico.png">
+    <title>Pedro-PHOS-Portifólio</title>
+</head>
+<body>
+    <main id="main">
+        <header id="header">
+            <button id="switch_btn"><div id="switch_section"></div></button>
+        </header>
+        <section id="section_01">
+
+            <h1>👋 Olá! Meu nome é <strong>Pedro Henrique</strong> e sou apaixonado por desenvolvimento de websites</h1>
+            <p>💬 Desde que comecei a ter conhecimento sobre a área, tenho me dedicado a aprender tudo o que posso sobre as últimas tecnologias e tendências.</p>
+            
+            <a href="https://github.com/Pedro-PHOS">
+                <div id="profile"></div>
+            </a>
+            
+            <p>	💪 Meu objetivo é tornar-me um desenvolvedor web experiente e criar sites de alta qualidade que ajudem as pessoas a se conectarem e se comunicarem de maneiras novas e interessantes.</p>
+
+            <div id="git_stats">
+                <div id="git_stats_01"><img src="https://github-readme-stats.vercel.app/api?username=Pedro-PHOS&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/></div>
+                <div id="git_stats_02"><img id="git_stats_02" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pedro-PHOS&layout=compact&langs_count=7&theme=github_dark"/></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Projetos:</h1>
+            <div id="portifolios">
+                <div id="card_01" class="cards">
+                    <a href="https://multilaser-teste.vercel.app"><img src="/imgs/Card_natalino.png" alt=""></a>
+                    <h1>Home natalina</h1>
+                    <p>Projeto home page com objetivo de recriar uma home page com um tema natalino com botões de doação e aprimorar a responsividade para mobile. </p>
+                </div>
+
+                <div id="card_02" class="cards">
+                    <a href="https://desafio-blog-01.vercel.app"><img src="/imgs/Card_blog.png" alt=""></a>
+                    <h1>News blog</h1>
+                    <p>Projeto com objetivo de recriar uma home page conforme os antigos blogs de noticias e aprimorar alguns conceitos de JS com os botões de like.</p>
+                </div>
+
+                <div id="card_03" class="cards">
+                    <a href="https://desafio-nike-02.vercel.app"><img src="/imgs/Card_nike.png" alt=""></a>
+                    <h1>Marketplace Nike</h1>
+                    <p>Objetivo deste projeto foi recriar uma home page que seja similar ao um market place, o exemplo escolhido foi a loja da Nike.</p>
+                </div>
+
+                <div id="card_04" class="cards">
+                    <a href="https://desafio-03-cards-color.vercel.app"><img src="/imgs/Card_colors.png" alt=""></a>
+                    <h1>Color cards</h1>
+                    <p>Projeto de uma home page focado no layout de cards e aprimorando o flexbox com resposividade para mobile.</p>
+                </div>
+
+                <div id="card_05" class="cards">
+                    <a href="https://desafio-04-login.vercel.app"><img src="/imgs/Card_login.png" alt=""></a>
+                    <h1>Login page</h1>
+                    <p>Este projeto tem o propósito de recriar uma login page que seja similar ao padrão encontrado nos sites.</p>
+                </div>
+            </div>
+        </section>
+    
+        <footer id="contacts">
+            <a href="https://www.linkedin.com/in/pedro-silva-0309371b6"><div id="linkedin"></div></a>
+            <a href="https://github.com/Pedro-PHOS"><div id="github"></div></a>
+        </footer>
+    </main>
+
+    <script src="/Scripts/card_hover.js"></script>
+    <script src="/Scripts/switchmode.js"></script>
+</body>
+</html>
+
+
+)
+
+
+CSS(
+	
+
 @font-face {
     font-family:"Lato";
     src: url(/Fonts/Lato-Regular.ttf);
@@ -75,6 +164,47 @@ main, div, footer, p, h1{
     background-size: cover;
     background-position: 0px -20px;
     box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+#git_stats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#git_stats_01{
+    width: 60%;
+    height: 100%;
+    margin-inline: 1rem;
+    margin-block: 2rem 1rem;
+    padding-bottom: 2rem;
+    background-image: url("https://github-readme-stats.vercel.app/api?username=Pedro-PHOS&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true");
+    background-repeat: no-repeat;
+    background-size: 99%;
+}
+
+#git_stats_01 img{
+    width: 90%;
+    height: 100%;
+    opacity: 0;
+}
+
+#git_stats_02{
+    width: 60%;
+    height: 100%;
+    margin-inline: 1rem;
+    margin-block: 0 1rem;
+    padding-bottom: 2rem;
+    background-image: url("https://github-readme-stats.vercel.app/api/top-langs/?username=Pedro-PHOS&layout=compact&langs_count=7&theme=github_dark");
+    background-repeat: no-repeat;
+    background-size: 99%;
+}
+
+#git_stats_02 img{
+    width: 90%;
+    height: 100%;
+    opacity: 0;
 }
 
 
@@ -304,3 +434,6 @@ footer{
         width: 100%;
     }
 }
+
+
+)
