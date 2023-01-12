@@ -6,4 +6,3 @@ function toggle(){
 }
 
 switch_btn.addEventListener("click",toggle);
-z
