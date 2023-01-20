@@ -71,9 +71,8 @@ main, div, footer, p, h1{
     height: 200px;
     border-radius: 100%;
     border: 2px solid black;
-    background-image: url(/imgs/Cyber_pic.png);
+    background-image: url(/imgs/Profile.jpg);
     background-size: cover;
-    background-position: 0px -20px;
     box-shadow: 5px 5px 8px rgb(0, 0, 0);
 }
 
@@ -122,9 +121,45 @@ main, div, footer, p, h1{
 }
 
 
+#copy_section{
+    display: flex;
+    flex-direction: column;
+}
+
+#copy_button{
+    background-color: #161d27;
+    color: #c2d0d8;
+    border: 2px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#copy_hidden{
+    display: none;
+}
+
+#copy_hidden a{
+    text-decoration: none;
+    color:#569ff5;
+    margin-inline: 0.2rem;
+}
+
+#copy_section.show #copy_hidden{
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    color: #c2d0d8;
+    background-color: #161d27;
+    box-shadow: 5px -4px 10px rgb(0, 0, 0);
+}
+
+
 footer{
-    box-shadow: 1px 5px 5px 10px rgb(0, 0, 0);
-    background-color: rgb(22, 29, 39);
+    box-shadow: 5px -4px 10px rgb(0, 0, 0);
+    background-color: #161d27;
     padding-block: 1rem;
     display: flex;
     flex-direction: row;
@@ -150,7 +185,6 @@ footer{
 }
 
 
-
 /*Ligth Mode*/
 
 #main.switch{
@@ -169,14 +203,6 @@ footer{
     color: #545454;
 }
 
-#main.switch #git_stats_01{
-    background-image: url("https://github-readme-stats.vercel.app/api?username=Pedro-PHOS&show_icons=true&theme=buefy&include_all_commits=true&count_private=true");
-}
-
-#main.switch #git_stats_02{
-    background-image: url("https://github-readme-stats.vercel.app/api/top-langs/?username=Pedro-PHOS&layout=compact&langs_count=7&theme=buefy");
-}
-
 #main.switch .cards{
     background-color: #ffffff;
     box-shadow: 1px 1px 8px rgb(0, 8, 10);
@@ -186,9 +212,26 @@ footer{
     color: #545454;
 }
 
+#main.switch #copy_button{
+    background-color: #ffffff;
+    color: #7958d5;
+    box-shadow: -2px -2px 8px rgba(0, 8, 10, 0.4);
+    border: none;
+}
+
+#main.switch #copy_hidden{
+    background-color: #ffffff;
+    color: #545454;
+    box-shadow: 0px -2px 15px rgba(0, 8, 10, 0.4);
+}
+
+#main.switch #copy_hidden a{
+    color: #7958d5;
+}
+
 #main.switch footer{
     background-color: #ffffff;
-    box-shadow: 5px 5px 15px rgb(0, 8, 10);
+    box-shadow: 0px 2px 15px rgb(0, 8, 10);
 }
 
 #main.switch #linkedin{
