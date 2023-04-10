@@ -8,8 +8,13 @@
     src: url(/Fonts/Lato-Black.ttf);
 }
 
-main, div, footer, p, h1{
+main, footer, .cards{
     transition: 1s;
+}
+
+span{
+    margin-right: 1rem;
+    font-size: small;
 }
 
 #main{
@@ -22,7 +27,13 @@ main, div, footer, p, h1{
 
 #header{
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+    margin-block: 0 2rem;
+}
+
+#black{
+    display: none;
 }
 
 #switch_btn{
@@ -31,7 +42,7 @@ main, div, footer, p, h1{
     background-color: transparent;
     border: none;
     margin-block: 1rem 0;
-    margin-inline: 1rem;
+    margin-right: 1.2rem;
 }
 
 #switch_section{
@@ -195,6 +206,14 @@ footer{
     font-family: Lato;
 }
 
+#main.switch #white{
+    display: none;
+}
+
+#main.switch #black{
+    display: flex;
+}
+
 #main.switch #switch_section{
     background-image: url(/imgs/whitemode_icon.png);
 }
@@ -247,5 +266,14 @@ footer{
     #section_01 h1{
         margin-inline: 2rem;
         margin-block: 1rem;
+    }
+
+    #switch_btn{
+        height: 40px;
+        width: 40px;
+    }
+
+    span{
+        font-size: 10px;
     }
 }
